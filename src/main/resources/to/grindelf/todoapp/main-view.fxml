@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="to.grindelf.todoapp.controllers.MainController">
+    <HBox spacing="10" alignment="CENTER">
+        <TextField fx:id="taskInput" promptText="Enter your task here" HBox.hgrow="ALWAYS"/>
+        <Button text="Add Task" onAction="#addTask"/>
+    </HBox>
+
+    <Separator/>
+
+    <ListView fx:id="taskListView" VBox.vgrow="ALWAYS"/>
+
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+        <Button text="Remove Selected" onAction="#removeSelectedTask"/>
+    </HBox>
+    <HBox spacing="10" alignment="CENTER_LEFT">
+        <Button text="Save tasks" onAction="#saveTasks"/>
+    </HBox>
+</VBox>
