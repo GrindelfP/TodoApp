@@ -3,20 +3,13 @@ package to.grindelf.todoapp.utils
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.kotlinModule
 import com.fasterxml.jackson.module.kotlin.readValue
-
-import java.io.File
-
-import javafx.fxml.FXML
-import javafx.scene.control.Button
-import javafx.scene.control.ListView
-import javafx.scene.control.TextField
-import javafx.scene.control.CheckBox
-import javafx.scene.layout.HBox
-import javafx.scene.control.Label
 import javafx.collections.FXCollections
 import javafx.collections.ObservableList
-import javafx.scene.layout.VBox
-import to.grindelf.todoapp.utils.DataProcessor
+import javafx.scene.control.Button
+import javafx.scene.control.CheckBox
+import javafx.scene.control.Label
+import javafx.scene.layout.HBox
+import java.io.File
 
 object DataProcessor {
 

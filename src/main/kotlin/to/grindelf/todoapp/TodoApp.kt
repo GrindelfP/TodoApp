@@ -1,12 +1,9 @@
 package to.grindelf.todoapp
 
 import javafx.application.Application
-import javafx.event.EventHandler
 import javafx.fxml.FXMLLoader
 import javafx.scene.Scene
 import javafx.stage.Stage
-import to.grindelf.todoapp.controllers.MainController
-import to.grindelf.todoapp.utils.DataProcessor
 
 object TodoApp {
     @JvmStatic

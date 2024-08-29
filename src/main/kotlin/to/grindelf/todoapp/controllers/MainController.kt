@@ -1,21 +1,16 @@
 package to.grindelf.todoapp.controllers
 
-import javafx.fxml.FXML
-import javafx.scene.control.Button
-import javafx.scene.control.ListView
-import javafx.scene.control.TextField
-import javafx.scene.control.CheckBox
-import javafx.scene.layout.HBox
-import javafx.scene.control.Label
-import javafx.collections.FXCollections
 import javafx.collections.ObservableList
-import javafx.scene.layout.VBox
+import javafx.fxml.FXML
+import javafx.scene.control.*
+import javafx.scene.layout.HBox
 import to.grindelf.todoapp.utils.DataProcessor
 
 class MainController {
 
     @FXML
     private lateinit var taskInput: TextField
+
     @FXML
     private lateinit var taskListView: ListView<HBox>
 
