@@ -14,18 +14,8 @@ import java.io.File
 object DataProcessor {
 
     private const val FILE_PATH: String = "src/main/resources/to/grindelf/todoapp/tasks"
-    private const val MT_FILE_PATH: String = "src/main/resources/to/grindelf/todoapp/tasks_mt"
     private val serializer: ObjectMapper = objectMapper()
     private val tasksFile: File = File(FILE_PATH)
-
-    private fun <T> observableListToList(observableList: ObservableList<T>): List<T> {
-        val list: MutableList<T> = mutableListOf()
-        observableList.forEach { element ->
-            list.add(element)
-        }
-
-        return list
-    }
 
     private fun listToObservableListOfHBox(list: List<String>): ObservableList<HBox> {
         val observableList: ObservableList<HBox> = FXCollections.observableArrayList()
@@ -51,7 +41,6 @@ object DataProcessor {
 
     fun saveTasks(tasks: ObservableList<HBox>) {
         val tasksAsListOfStrings = mutableListOf<String>()
-        val tasksAsList = observableListToList(tasks)
 
         tasks.forEach { task ->
             val taskText = task.children.filterIsInstance<Label>().firstOrNull()

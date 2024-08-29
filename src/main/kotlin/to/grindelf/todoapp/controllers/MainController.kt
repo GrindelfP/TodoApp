@@ -50,6 +50,7 @@ class MainController {
         tasks.removeAll(tasksToRemove)
     }
 
+    @Deprecated("Will be removed soon")
     fun transmitTasks(): ObservableList<HBox> = tasks
 
     @FXML
